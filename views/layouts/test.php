@@ -2,7 +2,11 @@
 
 use yii\helpers\Html;
 
-$this->beginPage(); ?>
+\app\assets\TestAsset::register($this);
+
+$this->beginPage();
+
+?>
 <!doctype html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
